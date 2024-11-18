@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Breast Cancer Detection{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Breast Cancer Detection Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            {% block content %}
+            <!-- Dynamic Content Goes Here -->
+            {% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Health Application. All rights reserved.</p>
+    </footer>
+</body>
+</html>
