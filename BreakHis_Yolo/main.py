@@ -1,4 +1,7 @@
 from ultralytics import YOLO
+from dotenv import dotenv_values
+
+env = dotenv_values("paths.env")
 
 model = YOLO("yolo11n-cls.pt")
 
