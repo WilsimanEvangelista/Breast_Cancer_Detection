@@ -1,3 +1,7 @@
+# Datasets
+#BreakHis_Yolo/binary_dataset/
+BreakHis_Yolo/dataset_cancer_v1/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
