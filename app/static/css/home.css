@@ -1,0 +1,151 @@
+/* Estilos para a seção Hero (Banner Inicial) */
+.hero {
+    background-image: url('/static/images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: var(--background-color); /* Texto branco sobre fundo */
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Vinho Escuro */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--accent-color); /* Rosa Sutil */
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons .button {
+    background-color: var(--primary-color); /* Vinho Escuro */
+    color: var(--background-color); /* Branco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .button:hover {
+    background-color: var(--button-hover); /* Tom mais escuro de vinho */
+}
+
+.hero-buttons .button-secondary {
+    background-color: var(--primary-color); /* Roxo Profundo */
+    color: var(--background-color); /* Branco */
+}
+
+.hero-buttons .button-secondary:hover {
+    background-color: var(--button-hover); /* Tom mais escuro */
+}
+
+/* Estilos para a seção Features (Recursos do Sistema) */
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.features h2 {
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    padding: 10px;
+}
+
+.feature h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Estilos para a seção Call-to-Action (Chamada para Ação) */
+.call-to-action {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--primary-color); /* Vinho Escuro */
+    color: var(--background-color); /* Branco */
+    border-radius: 8px;
+}
+
+.call-to-action h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.call-to-action .button {
+    padding: 10px 20px;
+    background-color: var(--accent-color); /* Rosa Suave */
+    color: var(--background-color); /* Branco */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .button:hover {
+    background-color: var(--secondary-color); /* Roxo Profundo */
+}
+
+.are_you_ready {
+    color: aliceblue;
+}
+
+/* Responsividade para novas seções */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+    }
+}
