@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 import os
-from models.gradcam_utils import generate_gradcam
+from models.gradcam_utils import aply_gradcam_binary
 
 main = Blueprint("main", __name__)
 
@@ -16,8 +16,7 @@ def home():
             binary_result = "Benign"  # Replace with model prediction
 
             # GradCam Generation
-            gradcam_path = os.path.join("outputs", f"heatmap_{file.filename}")
-            generate_gradcam(file_path, gradcam_path)
+            predicted_label_binary = aply_gradcam_binary(file_path)
 
             # Multiclass Model Inference
             multiclass_result = "Type A"  # Replace with model prediction

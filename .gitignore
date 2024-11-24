@@ -1,6 +1,14 @@
 # Datasets
-#BreakHis_Yolo/binary_dataset/
-BreakHis_Yolo/dataset_cancer_v1/
+BreakHis_Yolo/dataset_cancer_v1
+BreakHis_Yolo/40X_binary
+BreakHis_Yolo/40X_multiclass
+BreakHis_Yolo/binary_dataset
+BreakHis_Yolo/multiclass_dataset
+BreakHis_Yolo/run_yolo_cls_binary
+BreakHis_Yolo/run_yolo_cls_multiclass
+BreakHis_Yolo/run_yolov11_cls_binary
+BreakHis_Yolo/yolo11m-cls.pt
+BreakHis_Yolo/yolo11n.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

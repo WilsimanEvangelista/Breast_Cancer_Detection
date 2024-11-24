@@ -1,8 +1,41 @@
 {% extends "base.html" %}
+
 {% block content %}
-<h2>Envie sua imagem histopatológica</h2>
-<form action="/" method="POST" enctype="multipart/form-data">
-    <input type="file" name="image" required>
-    <button type="submit">Analisar</button>
-</form>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Breast Cancer Detection</h1>
+        <p>Utilizando inteligência artificial para auxiliar médicos na detecção e diagnóstico precoce do câncer de mama.</p>
+        <div class="hero-buttons">
+            <a href="/new_report" class="button">Novo pré-diagnóstico</a>
+            <a href="/about" class="button button-secondary">Saiba Mais</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Por que usar o Breast Cancer Detection?</h2>
+    <div class="features-container">
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/feature1.png') }}" alt="Ícone de eficiência">
+            <h3>Eficiência</h3>
+            <p>Reduza o tempo de análise com tecnologia avançada de IA.</p>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/feature2.png') }}" alt="Ícone de precisão">
+            <h3>Precisão</h3>
+            <p>Resultados confiáveis para suporte no diagnóstico.</p>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/feature3.png') }}" alt="Ícone de acessibilidade">
+            <h3>Uso simplificado</h3>
+            <p>Interface simples e acessível para todos os profissionais.</p>
+        </div>
+    </div>
+</section>
+
+<section class="call-to-action">
+    <h2 class="are_you_ready">Pronto para começar?</h2>
+    <p>Crie seu primeiro relatório agora e descubra como nossa tecnologia pode ajudar você.</p>
+    <a href="/new_report" class="button">Gerar novo pré-diagnóstico</a>
+</section>
 {% endblock %}
